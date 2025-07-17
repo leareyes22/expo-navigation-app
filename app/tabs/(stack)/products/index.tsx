@@ -9,12 +9,12 @@ const Products = () => {
         data={products}
         renderItem={({ item }) => (
           <View className="mt-10 px-4">
-            <Text className="text-2xl font-space-mono">{item.title}</Text>
-            <Text className="text-sm font-space-mono">{item.description}</Text>
+            <Text className="text-2xl font-segoe-ui">{item.title}</Text>
+            <Text className="text-sm font-segoe-ui">{item.description}</Text>
             <View className="flex flex-row justify-between">
-              <Text className="font-space-mono font-bold">{item.price}</Text>
+              <Text className="font-segoe-ui font-bold">{item.price}</Text>
               <Link
-                href={`/(stack)/products/${item.id}`}
+                href={`/tabs/(stack)/products/${item.id}`}
                 className="text-primary"
               >
                 View details

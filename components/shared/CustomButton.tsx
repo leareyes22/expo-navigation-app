@@ -39,7 +39,7 @@ const CustomButton = React.forwardRef(
           onLongPress={onLongPress}
           ref={ref}
         >
-          <Text className={`text-center ${textColor} font-space-mono`}>
+          <Text className={`text-center ${textColor} font-segoe-ui`}>
             {children}
           </Text>
         </Pressable>
@@ -53,7 +53,7 @@ const CustomButton = React.forwardRef(
         onLongPress={onLongPress}
         ref={ref}
       >
-        <Text className="text-white text-center font-space-mono">{children}</Text>
+        <Text className="text-white text-center font-segoe-ui">{children}</Text>
       </Pressable>
     );
   }

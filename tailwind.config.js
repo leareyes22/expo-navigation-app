@@ -20,6 +20,8 @@ module.exports = {
       },
       fontFamily: {
         "space-mono": ["SpaceMono", "sans-serif"],
+        "trebuchet-ms": ["TrebuchetMS", "sans-serif"],
+        "segoe-ui": ["SegoeUI", "sans-serif"],
       },
     },
   },

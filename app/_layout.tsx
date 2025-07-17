@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-
 import { useFonts } from "expo-font";
 import { Slot, SplashScreen } from "expo-router";
+import { useEffect } from "react";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 import "./global.css";
 
@@ -10,6 +10,8 @@ SplashScreen.preventAutoHideAsync();
 const RootLayout = () => {
   const [fontsLoaded, error] = useFonts({
     SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
+    SegoeUI: require("../assets/fonts/Segoe-UI-Thin-Standard.ttf"),
+    TrebuchetMs: require("../assets/fonts/Trebuchet-MS-Standard.ttf"),
   });
 
   useEffect(() => {
@@ -20,7 +22,11 @@ const RootLayout = () => {
 
   if (!fontsLoaded && !error) return null;
 
-  return <Slot />;
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Slot />
+    </GestureHandlerRootView>
+  );
 };
 
 export default RootLayout;

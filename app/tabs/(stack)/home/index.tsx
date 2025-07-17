@@ -6,17 +6,23 @@ const Home = () => {
   return (
     <SafeAreaView>
       <View className="px-10 mt-5">
-        <CustomButton className="mb-2" onPress={() => router.push("/products")}>
+        <CustomButton
+          className="mb-2"
+          onPress={() => router.push("/tabs/(stack)/products")}
+        >
           Productos
         </CustomButton>
         <CustomButton
           className="mb-2"
-          onPress={() => router.push("/profile")}
+          onPress={() => router.push("/tabs/(stack)/profile")}
           color="secondary"
         >
           Perfil
         </CustomButton>
-        <CustomButton onPress={() => router.push("/settings")} color="tertiary">
+        <CustomButton
+          onPress={() => router.push("/tabs/(stack)/settings")}
+          color="tertiary"
+        >
           Ajustes
         </CustomButton>
       </View>
